@@ -43,7 +43,7 @@ After the script completes, open `notebooks/comfyui_playground.ipynb` inside the
 Once this project lives on GitHub, add a Colab badge to the README so collaborators can spin it up instantly:
 
 ```markdown
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/<your-org>/<your-repo>/blob/main/notebooks/comfyui_playground.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nihilistau/Comfy-Playground/blob/main/notebooks/comfyui_playground.ipynb)
 ```
 
 Replace `<your-org>/<your-repo>` with the repository slug. The badge will clone the repo inside Colab, and the included install script can finish provisioning the Drive-backed environment.
