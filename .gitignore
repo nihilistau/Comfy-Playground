@@ -1,0 +1,27 @@
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.dylib
+*.egg-info/
+*.log
+*.tmp
+
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+
+.env
+.venv/
+venv/
+.env.local
+
+# VS Code
+.vscode/
+
+# Python coverage and packaging
+.coverage
+htmlcov/
+dist/
+build/

@@ -1,0 +1,7 @@
+pytest
+requests
+flask
+ipywidgets
+PyYAML
+pandas
+plotly
