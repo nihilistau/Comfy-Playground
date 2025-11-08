@@ -36,6 +36,37 @@
 
 ComfyUI lets you design and execute advanced stable diffusion pipelines using a graph/nodes/flowchart based interface. Available on Windows, Linux, and macOS.
 
+---
+
+## Playground Quickstart (Colab-Friendly)
+
+This fork layers a Drive-backed Google Colab playground on top of upstream ComfyUI. Use it when you want a one-click notebook experience aligned with the Control Board overhaul.
+
+1. **Bootstrap the Drive workspace**
+   ```powershell
+   python scripts/install_playground.py --install-deps --overwrite
+   ```
+   Key flags:
+   - `--drive-root` sets the Drive destination (default `/content/drive/MyDrive/ComfyUI`).
+   - `--target` changes where the project files are copied (`<drive-root>/playground` by default).
+   - `--include-tests` copies the regression suite for smoke checks.
+2. **Open the notebook** – launch `notebooks/comfyui_playground.ipynb` in Colab and follow the Control Board tabs.
+3. **Share via badge** – add the Colab badge below to any documentation for instant launches:
+   ```markdown
+   [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nihilistau/Comfy-Playground/blob/main/notebooks/comfyui_playground.ipynb)
+   ```
+
+For local testing, install dependencies and run the pseudo-test suite:
+
+```powershell
+python -m pip install -r requirements.txt
+python -m pytest -q
+```
+
+When running outside Colab, point `DRIVE_ROOT` at a writable directory (for example `set DRIVE_ROOT=d:\tmp\comfyui`).
+
+---
+
 ## Get Started
 
 #### [Desktop Application](https://www.comfy.org/download)
