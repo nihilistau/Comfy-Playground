@@ -8,7 +8,7 @@
 | Configuration + Options | Define Drive paths and toggles | Duplicated printing logic in multiple later cells |
 | Drive Mount | Mounts Google Drive and ensures directory structure | Good sentinel creation; lacks retry messaging |
 | Endpoint Helper + Health Check | Configure API base, run status ping | Spread across two cells; mixed display/logic |
-| Install / Update | Clone ComfyUI, create venv, install deps | Large cell mixing setup + logging; no progress UI |
+| Install / Update | Clone ComfyUI, install deps into runtime | Large cell mixing setup + logging; no progress UI |
 | Model Manager | Commented wget blocks | Needs structured manifest + queue integration |
 | Tunnel Starters | Cloudflared / LocalTunnel commands | Minimal validation; no auto-poll of URL |
 | Demo Blocks (T2I/I2I/etc.) | Widget-based generation scaffolds | Many rely on global state, limited modular reuse |

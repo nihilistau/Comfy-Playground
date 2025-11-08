@@ -29,7 +29,7 @@ Always download directly into Drive so models persist between Colab sessions.
 Notebook structure an agent should produce (concise cell list)
 1) Mount Drive — validate by creating and reading a sentinel file.
 2) Options toggles (checkboxes): install_comfyui, update_comfyui, install_plugins, start_cloudflared, start_localtunnel, run_demo_workflows.
-3) Install/update ComfyUI (idempotent) — clone/sync into Drive and install requirements into a venv under Drive.
+3) Install/update ComfyUI (idempotent) — clone/sync into Drive and install requirements into the active runtime (no virtualenv).
 4) Model manager — commented civitai/hf download examples and quick-download helpers.
 5) Start ComfyUI — two cells: Cloudflared and Localtunnel. Each must print a public URL and PID and be safe to re-run.
 6) T2I demo — ipywidgets GUI: prompt, negative prompt, steps, cfg, sampler, model dropdown (populated from Drive), batch size, width/height, upscale toggle. Save to `artifacts/` and show inline preview.

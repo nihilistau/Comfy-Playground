@@ -1,6 +1,6 @@
 ComfyUI Colab Playground
 
-This repository contains a Colab-ready notebook that mounts Google Drive, installs ComfyUI into a Drive-backed venv, and provides a set of cells to safely resolve and download models from Civitai/HuggingFace with Drive persistence.
+This repository contains a Colab-ready notebook that mounts Google Drive, installs ComfyUI directly into the active runtime (while keeping assets on Drive), and provides a set of cells to safely resolve and download models from Civitai/HuggingFace with Drive persistence.
 
 Quick run order
 
